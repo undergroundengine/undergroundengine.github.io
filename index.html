@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Ground Engine / 地底引擎</title>
+    <style>
+        @font-face {
+            font-family: 'Determination Mono';
+            src: url('./dtm_mono.ttf');
+        }
+        @font-face {
+            font-family: 'Mars Needs Cunnilingus';
+            src: url('./mnc.ttf');
+        }
+        *{
+            margin: 0;
+            font-family: 'Determination Mono';
+            text-align: center;
+            color: white;
+            background-color: #000;
+        }
+        h1{
+            margin-top: 50px;
+        }
+        a:link{
+            color:#F00;
+        }
+        a:visited{
+            color:#0F0;
+        }
+        a:hover{
+            color:#FF0;
+        }
+        a:active{
+            color:#F80;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="cn">
+        <big><h1>地底引擎</h1></big>
+        <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Under Ground Engine
+        </h2>
+        <br>
+        <hr width="75%" size="5px" color="#FF0" style="margin: 0 auto;background-color: #FF0;">
+        <br>
+        <big>
+            <p>这是一个使用HTML，CSS和JavaScript制作的<a href="http://undertale.com">传说之下</a>饭制游戏引擎。</p>
+            <p>这个项目由<a href="http://github.com/Alcom1/Undertale.js">Undertale.js</a>再开发。</p>
+            <h3>创作者</h4>
+            <p><a href="http://undertale.com">传说之下</a> - 托比·福克斯</p>
+            <p>地底引擎 - 气功豆</p>
+            <p><a href="http://github.com/Alcom1/Undertale.js">Undertale.js</a> - Alcom1</p>
+            <h4>使用内容</h5>
+            <p>贴图 - 托比·福克斯，提米·常和Springs</p>
+            <p>音乐 - BenyiC03的Slaughter In The Spotlight</p>
+            <p>...</p>
+            <h5>还有你的使用和游玩！</h6>
+        </big>
+        <br>
+        <div>
+            <img src="cnc.png">&nbsp;<a href="javascript:cl();"><img src="en.png"></a>
+        </div>
+        <br>
+        <big><big>
+            <a href="https://github.com/undergroundengine/Under-Ground-Engine/archive/refs/tags/Pre-releases.zip">下载</a>&nbsp;/&nbsp;<a href="http://github.com/undergroundengine/Under-Ground-Engine">Github</a>
+            <small><small><small><p style="color: #888; display: inline;">当前版本：<span style="font-family: 'Mars Needs Cunnilingus';color: #888;">v0.1.0</span></p></small></small></small>
+        </big></big>
+    </div>
+    <div id="en">
+        <big><h1>Under Ground Engine</h1></big>
+        <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            地底引擎
+        </h2>
+        <br>
+        <hr width="75%" size="5px" color="#FF0" style="margin: 0 auto;background-color: #FF0;">
+        <br>
+        <big>
+            <p>This is an <a href="http://undertale.com">undertale</a> fangame engine made by HTML, CSS and JavaScript.</p>
+            <p>This project is redeveloped by <a href="http://github.com/Alcom1/Undertale.js">Undertale.js</a>.</p>
+            <h3>Creators</h4>
+            <p><a href="http://undertale.com">Undertale</a> - Toby Fox</p>
+            <p>Under Ground Engine - QigongBea</p>
+            <p><a href="http://github.com/Alcom1/Undertale.js">Undertale.js</a> - Alcom1</p>
+            <h4>Usage Context</h5>
+            <p>Texture - Toby Fox, Timmie Chang and Springs</p>
+            <p>Music - BenyiC03 (Slaughter In The Spotlight)</p>
+            <p>...</p>
+            <h5>And you for using or playing!</h6>
+        </big>
+        <br>
+        <div>
+            <a href="javascript:cl();"><img src="cn.png"></a>&nbsp;<img src="enc.png">
+        </div>
+        <br>
+        <big><big>
+            <a href="https://github.com/undergroundengine/Under-Ground-Engine/archive/refs/tags/Pre-releases.zip">Download</a>&nbsp;/&nbsp;<a href="http://github.com/undergroundengine/Under-Ground-Engine">Github</a>
+            <small><small><small><p style="color: #888; display: inline;">Current Version: <span style="font-family: 'Mars Needs Cunnilingus';color: #888;">v0.1.0</span></p></small></small></small>
+        </big></big>
+    </div>
+    <script>
+        function u(){
+            if(lang=='cn'){
+                document.getElementById('cn').style.display='block';
+                document.getElementById('en').style.display='none';
+            }else{
+                document.getElementById('en').style.display='block';
+                document.getElementById('cn').style.display='none';
+            }
+            localStorage.lang=lang;
+        }
+        function cl(){
+            if(lang=='cn') lang='en';
+            else lang='cn';
+        }
+
+        var lang=localStorage.getItem('lang');
+        if(!lang){
+            localStorage.lang='cn';
+            lang='cn';
+        }
+        setInterval(u,10);
+    </script>
+</body>
+</html>
